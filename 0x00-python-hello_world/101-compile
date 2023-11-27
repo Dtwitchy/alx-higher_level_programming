@@ -1,2 +1,2 @@
 #!/bin/bash
-phython3 -c "import py_compile; py_compile.compile('$PYFILE', '$PYFILE' + 'C')"
+phython3 -c "import py_compile; py_compile.compile('$PYFILE',	 '$PYFILE' + 'C')"
