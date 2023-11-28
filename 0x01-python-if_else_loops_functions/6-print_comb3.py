@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for i in range(9):
-    for j in range(i + 1, 10):
-        if i * 10 + j < 89:
-            print("{:d}{:d}".format(i, j), end=", ")
-print("{:d}".format(89))
-
+for first_number in range(0, 10):
+    for secound_number in range(first_number + 1, 10):
+        if first_number == 8 and second_number == 9:
+            print("{}{}".format(first_number, second_number))
+        else:
+            print("{}{}, ".format(first_number, secound_number), end='')
