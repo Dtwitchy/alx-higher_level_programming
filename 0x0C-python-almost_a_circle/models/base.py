@@ -5,7 +5,6 @@ import csv
 from os.path import exists
 
 
-
 class Base:
     """class Base
 
