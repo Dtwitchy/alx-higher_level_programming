@@ -8,14 +8,13 @@ if __name__ == "__main__":
     import urllib.parse
     import sys
 
-    target_url = sys.argv[1]
-    email_data = {'email': sys.argv[2]}
-    encoded_email = urllib.parse.urlencode(email_data)
-    encoded_email = encoded_email.encode('ascii')
-    request = urllib.request.Request(target_url, encoded_email)
+    url_ = sys.argv[1]
+    email_ = {'email': sys.argv[2]}
+    email = urllib.parse.urlencode(email_)
+    email = email.encode('ascii')
+    url_req = urllib.request.Request(url_, email)
 
-    with urllib.request.urlopen(request) as response:
-        url_resp = response.read()
-    
-    decoded_output = url_resp.decode('utf-8')
-    print(decoded_output)
+    with urllib.request.urlopen(url_req) as response:
+        url_res = response.read()
+    output = url_res.decode('utf-8')
+    print(output)
